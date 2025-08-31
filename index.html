@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOCKEYS</title>
+
   <!-- DaisyUI + Tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -22,29 +23,33 @@
       font-family: 'Manrope', sans-serif;
     }
   </style>
+
   <style type="text/tailwindcss">
     @theme {
-    --color-primary: #FF4240; /* custom orange */
-    --color-brand: #131318; 
-    --color-green:#008000; /* custom blue */
-    --color-yellow:#FFD700; /* custom blue */
-  }
-</style>
+      --color-primary: #FF4240; /* custom orange */
+      --color-brand: #131318; 
+      --color-green:#008000; 
+      --color-yellow:#FFD700;
+    }
+  </style>
 </head>
 
-<body>
+<body class="manrope">
   <header>
-    <!-- navbar -->
-    <div class="navbar bg-base-100 shadow-sm">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm px-4 lg:px-12">
       <div class="navbar-start">
+        <!-- mobile menu -->
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
@@ -55,6 +60,7 @@
         <a class="text-2xl font-medium">Hockey<span class="text-orange-600">'</span>s</a>
       </div>
 
+      <!-- desktop menu -->
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li class="text-primary"><a>Home</a></li>
@@ -66,58 +72,81 @@
       </div>
 
       <div class="navbar-end flex items-center gap-2">
-        <a class="btn btn-ghost btn-circle">
-          <div class="indicator hidden md:block">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-
-
-          <a class="btn bg-primary text-white text-xl font-normal">Get Ticket</a>
+        <div class="hidden md:block">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a class="btn bg-primary text-white text-base md:text-lg font-medium">Get Ticket</a>
       </div>
     </div>
-    <!-- card and carousel  _-->
+
+    <!-- Hero / Carousel -->
     <section>
-      <div class="relative w-full max-w-3xl mx-auto">
-        <img src="Images/1.png" alt="cup" />
+      <div class="relative w-full max-w-3xl mx-auto mt-4 px-2">
+        <img src="Images/1.png" alt="cup" class="w-full rounded-lg" />
 
-        <div class="absolute right-8 bottom-4 bg-gray-870 bg-opacity-75  text-white p-4 rounded-md max-w-md">
-          <h2 class="text-xl font-medium">Meet all the heroes from the field</h2>
-          <p class="text-sm mt-1">Dit amet consectetur. Condimentum dignissim adipiscing <br> aliquam turpis placerat
-            dolor. Purus urna in sit nullam proin. </p>
+        <!-- Overlay box -->
+        <div
+          class="absolute right-2 bottom-2 md:right-8 md:bottom-4 bg-gray-900 bg-opacity-75 text-white p-3 md:p-4 rounded-md max-w-xs md:max-w-md">
+          <h2 class="text-lg md:text-xl font-medium">Meet all the heroes from the field</h2>
+          <p class="text-xs md:text-sm mt-1 leading-tight">
+            Dit amet consectetur. Condimentum dignissim adipiscing <br class="hidden md:block" />
+            aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
-
       </div>
     </section>
-    <!-- radial section -->
-    <section>
-      <div class="">
-        <div class="space-y-5 mt-10 ml-7 text-center items-center ">
-          <h3 class="text-3xl font-medium">Professional Hockeys Club</h3>
-          <p>Dit amet consectetur. Condimentum dignissim adipiscing <br> aliquam turpis placerat dolor. Purus urna in
-            sit nullam
-            proin.</p>
+
+    <!-- Radial Section -->
+    <section class="px-4 lg:px-20 mt-10">
+      <!-- Title -->
+      <div class="text-center lg:text-center space-y-4">
+        <h3 class="text-2xl md:text-3xl font-medium">Professional Hockeys Club</h3>
+        <p class="text-sm md:text-base">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam
+          proin.
+        </p>
+      </div>
+
+      <!-- Radial Items Grid -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 text-center lg:text-left">
+        <!-- Item 1 -->
+        <div class="flex flex-col items-center space-y-4 p-4">
+          <div class="radial-progress w-24 h-24 md:w-32 md:h-32 text-2xl font-medium text-primary"
+            style="--value:87;" role="progressbar">
+            <span class="text-brand">87%</span>
+          </div>
+          <h5 class="text-lg md:text-xl font-bold">Prayer Facility</h5>
+          <p class="text-sm md:text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
         </div>
-        <div class="flex gap-12 space-between">
-        <div class="p-8 space-y-5">
-        <div class=" text-2xl font-medium radial-progress text-primary" style="--value:87;" aria-valuenow="87" role="progressbar"><span class="text-brand">87%</span></div>
-        <h5 class="text-xl font-bold text">Prayer Facility</h5>
-        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col items-center space-y-4 p-4">
+          <div class="radial-progress w-24 h-24 md:w-32 md:h-32 text-2xl font-medium text-green"
+            style="--value:95;" role="progressbar">
+            <span class="text-brand">95%</span>
+          </div>
+          <h5 class="text-lg md:text-xl font-bold">Prayer Facility</h5>
+          <p class="text-sm md:text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
         </div>
-        <div class="p-8 space-y-5">
-        <div class=" text-2xl font-medium radial-progress text-green " style="--value:95;" aria-valuenow="95" role="progressbar"><span class="text-brand">95%</span></div>
-        <h5 class="text-xl font-bold">Prayer Facility</h5>
-        <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+
+        <!-- Item 3 -->
+        <div class="flex flex-col items-center space-y-4 p-4">
+          <div class="radial-progress w-24 h-24 md:w-32 md:h-32 text-2xl font-medium text-yellow"
+            style="--value:90;" role="progressbar">
+            <span class="text-brand">90%</span>
+          </div>
+          <h5 class="text-lg md:text-xl font-bold">Prayer Facility</h5>
+          <p class="text-sm md:text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
         </div>
-        <div class="p-8 space-y-5 ">
-        <div class=" text-2xl font-medium radial-progress text-yellow " style="--value:90;" aria-valuenow="90" role="progressbar"><span class="text-brand">90%</span></div>
-        <h5 class="text-xl font-bold">Prayer Facility</h5>
-        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
-        </div>
-        <div class="p-8 space-y-5">
-        <div class=" text-2xl font-medium radial-progress text-brand " style="--value:80;" aria-valuenow="80" role="progressbar"><span class="text-brand">80%</span></div>
-        <h5 class="text-xl font-bold">Prayer Facility</h5>
-        <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
-        </div>
+
+        <!-- Item 4 -->
+        <div class="flex flex-col items-center space-y-4 p-4">
+          <div class="radial-progress w-24 h-24 md:w-32 md:h-32 text-2xl font-medium text-brand"
+            style="--value:80;" role="progressbar">
+            <span class="text-brand">80%</span>
+          </div>
+          <h5 class="text-lg md:text-xl font-bold">Prayer Facility</h5>
+          <p class="text-sm md:text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
         </div>
       </div>
     </section>
