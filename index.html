@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOCKEYS</title>
+  <!-- DaisyUI + Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7ff262c6bb.js" crossorigin="anonymous"></script>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <style>
+    .manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+  <style type="text/tailwindcss">
+    @theme {
+    --color-primary: #FF4240; /* custom orange */
+    --color-brand: #131318;  /* custom blue */
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <!-- navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="text-2xl font-semibold">Hockey<span class="text-orange-600">'</span>s</a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-primary"><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end flex items-center gap-2">
+        <a class="btn btn-ghost btn-circle">
+          <div class="indicator hidden md:block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+
+          <a class="btn bg-primary text-white text-xl font-normal">Get Ticket</a>
+      </div>
+    </div>
+    <!-- card and carousel  _-->
+    <section>
+      <div class="relative w-full max-w-3xl mx-auto">
+        <img src="Images/1.png" alt="cup" />
+
+        <div class="absolute right-8 bottom-4 bg-gray-900 bg-opacity-75  text-white p-4 rounded-md max-w-md">
+          <h2 class="text-xl font-semibold">Meet all the heroes from the field</h2>
+          <p class="text-sm mt-1">Dit amet consectetur. Condimentum dignissim adipiscing <br> aliquam turpis placerat
+            dolor. Purus urna in sit nullam proin. </p>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div>
+        <div class="space-y-5 mt-10 ml-7 ">
+          <h3 class="text-3xl font-semibold">Professional Hockeys Club</h3>
+          <p>Dit amet consectetur. Condimentum dignissim adipiscing <br> aliquam turpis placerat dolor. Purus urna in
+            sit nullam
+            proin.</p>
+        </div>
+        <div class="radial-progress text-primary" style="--value:70;" aria-valuenow="70" role="progressbar">70%</div>
+      </div>
+    </section>
+  </header>
+
+  <main></main>
+  <footer></footer>
+</body>
+
+</html>
