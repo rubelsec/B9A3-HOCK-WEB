@@ -25,7 +25,9 @@
   <style type="text/tailwindcss">
     @theme {
     --color-primary: #FF4240; /* custom orange */
-    --color-brand: #131318;  /* custom blue */
+    --color-brand: #131318; 
+    --color-green:#008000; /* custom blue */
+    --color-yellow:#FFD700; /* custom blue */
   }
 </style>
 </head>
@@ -50,7 +52,7 @@
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="text-2xl font-semibold">Hockey<span class="text-orange-600">'</span>s</a>
+        <a class="text-2xl font-medium">Hockey<span class="text-orange-600">'</span>s</a>
       </div>
 
       <div class="navbar-center hidden lg:flex">
@@ -78,23 +80,45 @@
       <div class="relative w-full max-w-3xl mx-auto">
         <img src="Images/1.png" alt="cup" />
 
-        <div class="absolute right-8 bottom-4 bg-gray-900 bg-opacity-75  text-white p-4 rounded-md max-w-md">
-          <h2 class="text-xl font-semibold">Meet all the heroes from the field</h2>
+        <div class="absolute right-8 bottom-4 bg-gray-870 bg-opacity-75  text-white p-4 rounded-md max-w-md">
+          <h2 class="text-xl font-medium">Meet all the heroes from the field</h2>
           <p class="text-sm mt-1">Dit amet consectetur. Condimentum dignissim adipiscing <br> aliquam turpis placerat
             dolor. Purus urna in sit nullam proin. </p>
         </div>
 
       </div>
     </section>
+    <!-- radial section -->
     <section>
-      <div>
-        <div class="space-y-5 mt-10 ml-7 ">
-          <h3 class="text-3xl font-semibold">Professional Hockeys Club</h3>
+      <div class="">
+        <div class="space-y-5 mt-10 ml-7 text-center items-center ">
+          <h3 class="text-3xl font-medium">Professional Hockeys Club</h3>
           <p>Dit amet consectetur. Condimentum dignissim adipiscing <br> aliquam turpis placerat dolor. Purus urna in
             sit nullam
             proin.</p>
         </div>
-        <div class="radial-progress text-primary" style="--value:70;" aria-valuenow="70" role="progressbar">70%</div>
+        <div class="flex gap-12 space-between">
+        <div class="p-8 space-y-5">
+        <div class=" text-2xl font-medium radial-progress text-primary" style="--value:87;" aria-valuenow="87" role="progressbar"><span class="text-brand">87%</span></div>
+        <h5 class="text-xl font-bold text">Prayer Facility</h5>
+        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="p-8 space-y-5">
+        <div class=" text-2xl font-medium radial-progress text-green " style="--value:95;" aria-valuenow="95" role="progressbar"><span class="text-brand">95%</span></div>
+        <h5 class="text-xl font-bold">Prayer Facility</h5>
+        <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+        </div>
+        <div class="p-8 space-y-5 ">
+        <div class=" text-2xl font-medium radial-progress text-yellow " style="--value:90;" aria-valuenow="90" role="progressbar"><span class="text-brand">90%</span></div>
+        <h5 class="text-xl font-bold">Prayer Facility</h5>
+        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="p-8 space-y-5">
+        <div class=" text-2xl font-medium radial-progress text-brand " style="--value:80;" aria-valuenow="80" role="progressbar"><span class="text-brand">80%</span></div>
+        <h5 class="text-xl font-bold">Prayer Facility</h5>
+        <p>Amet consectetur. Condimentum  dignissim adipiscing .</p>
+        </div>
+        </div>
       </div>
     </section>
   </header>
